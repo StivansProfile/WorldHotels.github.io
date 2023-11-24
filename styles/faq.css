@@ -1,0 +1,145 @@
+.faq-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    gap: 50px;
+}
+
+.room-ps{
+    font-size: 18px;
+    width: 80%;
+    text-align: center;
+}
+
+
+.standard-room-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.double-room-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: black;
+}
+
+.family-room-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    justify-content: center;
+}
+
+
+
+.standard-room{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.double-room{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.family-room{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#room1{
+    width: 410px;
+    height: 410px;
+    border-radius: 15px 15px 15px 15px;
+    opacity: 0; /* Initially hide images */
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+#room2{
+    width: 410px;
+    height: 410px;
+    border-radius: 15px 15px 15px 15px;
+    opacity: 0;
+}
+
+#room3{
+    width: 450px;
+    height: 410px;
+    border-radius: 15px 15px 15px 15px;
+    opacity: 0;
+}
+
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    .standard-room-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .double-room-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+    .family-room-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #room1{
+    width: 300px;
+    height: 300px;
+    border-radius: 15px 15px 15px 15px;
+    }
+
+    #room2{
+    width: 300px;
+    height: 300px;
+    }
+
+    #room3{
+    width: 300px;
+    height: 300px;
+    }
+
+    @keyframes slide-in {
+        0% {
+            opacity: 0;
+            transform: translateX(-50%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0%);
+        }
+    }
+}

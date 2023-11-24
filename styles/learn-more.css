@@ -1,0 +1,108 @@
+.learn-more-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+#learn-more-p{
+    font-size: 19px;
+    width: 60%;
+    text-align: center;
+}
+
+.learn-more-hs{
+    width: 30%;
+    border: 1px black solid;
+}
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Resetting default margin and padding for better layout */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd, dt {
+  margin: 0;
+  padding: 0;
+}
+
+/* Setting up basic styles for the table */
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Styling for responsive design */
+@media screen and (max-width: 600px) {
+  table {
+    overflow-x: auto;
+    display: block;
+  }
+  
+  thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    text-align: center;
+  }
+  
+  td {
+    text-align: center;
+    border-bottom: none;
+    border-right: none;
+  }
+  
+  td:last-child {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+
+.specific-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.features-images{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.discounts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}

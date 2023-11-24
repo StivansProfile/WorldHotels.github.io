@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+<body>
+
+    <div class="body-wrapper" id="body-wrapper-id">
+        <div class="nav-wrapper">
+            <nav>
+
+                <div class="brand-logo-container">
+                    <h2><a href="index.html">World Hotels</a></h2>
+                </div>
+
+                <div class="nav-links">
+                    <a href="about.html">About</a>
+                    <a id="faq-link" href="index.html#faq-section">FAQ</a>
+                    <a id="contact-link" href="contact.html">Contact</a>
+                </div>
+
+                <div class="nav-button-wrapper">
+                    <button id="sign-up-button-nav"><a href="register.html">Sign up</a></button>
+                </div>
+
+                <div class="hamburger-menu-container">
+                    <img src="../assets/menu.png" id="hamburger-menu-icon" onclick="displayHamburgerMenu()">
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="hidden-hamburger-menu" id="hidden-menu">
+            <div class="hidden-menu-wrapper">
+                <div class="menu-items">
+                    <p><a href="about.html">About us</a></p>
+                </div>
+                <hr>
+                <div class="menu-items">
+                    <p><a href="index.html#faq-section">FaQ</a></p>
+                </div>
+                <hr>
+                <div class="menu-items">
+                    <p><a href="contact.html">Contact us</a></p>
+                </div>
+                <hr>
+                <div class="menu-items">
+                    <p><a href="register.html">Sign up</a></p>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+        <div class="register-container" id="main">
+            <h1 id="s-title">To book your hotel, please register first...</h1>
+
+            <div class="sign-up-wrapper">
+                <div class="names">
+                    <input placeholder="First Name" class="sign-up-inputs" id="first-name">
+                    <input placeholder="Last Name" class="sign-up-inputs" id="last-name">
+                </div>
+
+                <div class="email">
+                    <input placeholder="Email" type="email" class="sign-up-inputs">
+                </div>
+
+                <div class="passwords">
+                    <input placeholder="Password" type="password" class="sign-up-inputs">
+                    <input placeholder="Confirm password" type="password" class="sign-up-inputs">
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox">
+                    <p>I accpet the Terms of use & Privacy Policy</p>
+                </div>
+
+                <div class="submit-button">
+                    <button id="submit-button">Sign up</button>
+                </div>
+
+                <div class="info">
+                    <p>Already have an account? <a id="login-here-link">Login here</a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+<script src="../scripts/script.js"></script>
+</html>

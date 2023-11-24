@@ -1,0 +1,148 @@
+.register-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    gap: 50px;
+    text-align: center;
+}
+
+.sign-up-wrapper{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px 10px 10px 10px;
+    background-color:#936EFE;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#first-name{
+    width: 200px;
+    height: 40px;
+}
+
+#last-name{
+    width: 200px;
+    height: 40px;
+}
+
+#submit-button{
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+}
+
+#s-title{
+    margin-top: 10px;
+}
+
+#login-here-link{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-up-inputs{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    margin-top: 10px;
+}
+
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.passwords{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.terms{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+   .sign-up-wrapper{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px 10px 10px 10px;
+        background-color:#936EFE;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    #first-name{
+        width: 150px;
+        height: 30px;
+    }
+
+    #last-name{
+        width: 150px;
+        height: 30px;
+    }
+
+    .sign-up-inputs{
+        width: 300px;
+        height: 30px;
+    }
+
+    #submit-button{
+        width: 300px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .sign-up-wrapper{
+        width: 300px;
+        height: 100%;
+        border-radius: 10px 10px 10px 10px;
+        background-color:#936EFE;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-up-inputs{
+        width: 250px;
+        height: 30px;
+    }
+    .names{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #first-name{
+        width: 250px;
+        height: 30px;
+    }
+
+    #last-name{
+        width: 250px;
+        height: 30px;
+    }
+}

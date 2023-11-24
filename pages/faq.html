@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/faq.css">
+</head>
+<body>
+    
+
+<div class="body-wrapper" id="body-wrapper-id">
+
+    <div class="nav-wrapper">
+        <nav>
+
+            <div class="brand-logo-container">
+                <h2><a href="index.html">World Hotels</a></h2>
+            </div>
+
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a id="faq-link" href="learn-more.html">Learn more</a>
+                <a id="contact-link" href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-button-wrapper">
+                <button id="sign-up-button-nav"><a href="register.html">Sign up</a></button>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <img src="../assets/menu.png" id="hamburger-menu-icon" onclick="displayHamburgerMenu()">
+            </div>
+
+        </nav>
+    </div>
+
+    <div class="hidden-hamburger-menu" id="hidden-menu">
+        <div class="hidden-menu-wrapper">
+            <div class="menu-items">
+                <p><a href="about.html">About us</a></p>
+            </div>
+            <hr>
+            <div class="menu-items">
+                <p><a href="learn-more.html">Learn More</a></p>
+            </div>
+            <hr>
+            <div class="menu-items">
+                <p><a href="contact.html">Contact us</a></p>
+            </div>
+            <hr>
+            <div class="menu-items">
+                <p><a href="register.html">Sign up</a></p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="faq-section-wrapper" id="main">
+        <h1>Available room types at World Hotels.</h1>
+        <hr style="border: 1px black solid; width: 25%;">
+
+
+        <div class="standard-room-container">
+            <div class="standard-room">
+                <h2>A standard room</h2>
+                <p class="room-ps">A standard room can have 1 guest only.</p>
+            </div>
+            <div>
+                <img src="../assets/room1.jpg" id="room1">
+            </div>
+        </div>
+
+        <div class="double-room-container">
+            <div class="double-room" id="target-div-1">
+                <h2 style="color: white;">A double room</h2>
+                <p class="room-ps" style="color: white;">A double room is 20% more price of a standard one and can have 2
+                    guests max. For second guest extra 10% of a Standard room price will also be charged
+                </p>
+            </div>
+
+            <div>
+                <img src="../assets/room2.jpg" id="room2">
+            </div>
+        </div>
+
+        <div class="family-room-container">
+            <div class="family-room" id="target-div-2">
+                <h2>A family room</h2>
+                <p class="room-ps">A Family room is 50% more price of a Standard room and can accommodate a family of
+                maximum 4 guests.</p>
+            </div>
+
+            <div>
+                <img src="../assets/room3.jpg" id="room3">
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</div>
+
+</body>
+<script src="../scripts/script.js"></script>
+<script src="../scripts/faq.js"></script>
+</html>
